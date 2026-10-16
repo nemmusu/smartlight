@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Smartlight">
+  <defs>
+    <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#202d47"/><stop offset="1" stop-color="#101b2c"/></linearGradient>
+    <linearGradient id="light" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffe6a5"/><stop offset=".52" stop-color="#ffb969"/><stop offset="1" stop-color="#f5868c"/></linearGradient>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#82e4e5"/><stop offset="1" stop-color="#5b9dec"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#tile)"/>
+  <circle cx="190" cy="189" r="111" fill="#ffb969" opacity=".22" filter="url(#glow)"/>
+  <path d="M188 68v31M90 145l-25-15M286 145l25-15M94 245l-24 16M283 246l27 17" stroke="#ffc884" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+  <path d="M190 109c-53 0-96 42-96 94 0 36 19 60 42 82 14 14 19 24 20 41h68c1-17 6-27 20-41 23-22 42-46 42-82 0-52-43-94-96-94Z" fill="url(#light)"/>
+  <path d="M155 326h70M160 349h60" stroke="#ffca85" stroke-width="16" stroke-linecap="round"/>
+  <path d="M169 371h42" stroke="#ffca85" stroke-width="15" stroke-linecap="round"/>
+  <path d="m156 202 27 28 42-53" fill="none" stroke="#fff6d3" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="259" y="257" width="184" height="126" rx="21" fill="#101a2b" stroke="url(#screen)" stroke-width="15"/>
+  <path d="M280 353c27-45 54-22 75-50 20-27 44-9 64-23" fill="none" stroke="url(#screen)" stroke-width="17" stroke-linecap="round"/>
+  <path d="M327 386v26m-29 3h59" stroke="#74c8ee" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="402" cy="302" r="10" fill="#ffe0a0"/>
+</svg>

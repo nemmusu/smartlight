@@ -1,0 +1,32 @@
+name: Bug report / Segnala un problema
+description: Help reproduce a problem without sharing private data.
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove passwords, MCP tokens, device IP addresses and personal names from logs and screenshots. / Rimuovi i dati personali."
+  - type: input
+    id: version
+    attributes:
+      label: Smartlight version / Versione
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system / Sistema
+      options:
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: backend
+    attributes:
+      label: Backend and device model / Integrazione e modello
+      placeholder: Tapo, OpenRGB, iCUE, Mystic Light experimental
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result, actual result / Passaggi e risultato
+    validations:
+      required: true

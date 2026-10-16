@@ -1,0 +1,11 @@
+# TPAP branch tested against this project's L900 firmware. Keep this revision pinned.
+python-kasa @ git+https://github.com/ZeliardM/python-kasa.git@e7084472972f08f2e2235b342f3964aedbfaeb3b
+openrgb-python==0.3.7
+cuesdk==4.0.84; sys_platform == "win32"
+pywebview==6.2.1
+keyring==25.7.0
+mcp==2.2.0
+pystray==0.19.5
+Pillow==12.3.0
+
+PyXlib; sys_platform == "linux"

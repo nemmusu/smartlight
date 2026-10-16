@@ -1,0 +1,9 @@
+name: Idea / Proponi una funzione
+description: Suggest a practical improvement / Suggerisci un miglioramento.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do? / Cosa vorresti fare?
+    validations:
+      required: true
