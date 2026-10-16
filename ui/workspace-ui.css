@@ -1,0 +1,66 @@
+/* Compact overview: room names and their power controls stay visible together. */
+#page-home .workspace-intro{align-items:center;margin-bottom:16px}
+#page-home .workspace-intro h2{font-size:26px}
+#page-home .workspace-intro p{max-width:690px;font-size:12px}
+#page-home .workspace-layout{display:block}
+#page-home .workspace-board{gap:12px}
+#page-home .workspace-board-heading{margin-top:10px;align-items:center}
+#page-home .workspace-board-heading h3{font-size:19px;margin-top:4px}
+#page-home .workspace-board-tools{display:flex;align-items:center;gap:12px}
+#page-home .workspace-rooms{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+#page-home .workspace-zone{padding:16px;background:linear-gradient(135deg,#1c2b3d,#172332);overflow:visible}
+#page-home .workspace-zone.all-zone{padding:15px 18px;background:linear-gradient(115deg,#26394f,#193844);border-color:#56748f}
+#page-home .zone-top{align-items:center;gap:14px}
+#page-home .zone-title{gap:10px;flex:1}
+#page-home .zone-symbol{width:34px;height:34px;font-size:18px;border-radius:10px}
+#page-home .zone-title>div{min-width:0}
+#page-home .zone-title h3{font-size:17px;margin:0 0 4px}
+#page-home .all-zone .zone-title h3{font-size:18px}
+#page-home .zone-title p{font-size:11px;line-height:1.3}
+#page-home .zone-power{flex:none;gap:6px}
+#page-home .zone-power .mini-button{min-height:34px;padding:7px 11px;background:#294b61;border:1px solid #54758d;color:#e6f4ff}
+#page-home .zone-power .zone-off{background:#33475d;border-color:#6a849c;color:#f4f8ff}
+#page-home .zone-power .mini-button:hover{background:#456a87;border-color:#a5cee9}
+#page-home .zone-options{margin-top:12px;border-top:1px solid #3e526866}
+#page-home .zone-options>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 0 0;cursor:pointer;color:#a6d7ff;font-size:11px;font-weight:700;list-style:none}
+#page-home .zone-options>summary::-webkit-details-marker{display:none}
+#page-home .zone-options>summary:focus-visible,#page-home .workspace-pool-drawer>summary:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:4px}
+#page-home .zone-options[open]>summary>span{transform:rotate(180deg)}
+#page-home .zone-options-body{padding-top:12px}
+#page-home .zone-scope-note{font-size:11px;color:#b6c9d8;margin:0 0 12px;line-height:1.5}
+#page-home .zone-controls{grid-template-columns:65px minmax(90px,1fr) auto;gap:10px;padding:0;border:0;align-items:end}
+#page-home .workspace-zone .zone-controls>.button{grid-column:auto}
+#page-home .zone-controls input[type=color]{height:34px}
+#page-home .zone-controls input[type=range]{margin-top:13px}
+#page-home .zone-controls .button,#page-home .zone-atmosphere .button{font-size:11px;padding-inline:10px}
+#page-home .zone-atmosphere{grid-template-columns:minmax(0,1fr) 105px;gap:8px;margin-top:14px}
+#page-home .zone-atmosphere>.button{grid-column:1/-1;justify-self:start}
+#page-home .zone-members-heading{border-top:1px solid #3e526866;padding-top:10px;margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;color:#b9cbdc}
+#page-home .zone-members-heading .text-button{font-size:10px;padding:4px 0}
+#page-home .zone-members{margin:10px 0 0;max-height:150px;overflow:auto}
+#page-home .zone-member{font-size:10px;max-width:100%;white-space:normal;padding:5px 7px}
+#page-home .zone-drop-hint{display:none;margin:10px 0 0}
+body.drag-active #page-home .zone-drop-hint{display:block}
+#page-home .workspace-empty{grid-column:1/-1}
+#page-home .workspace-pool-drawer{background:#121d2c;border:1px solid #33495f;border-radius:11px;overflow:hidden}
+#page-home .workspace-pool-drawer>summary{display:flex;justify-content:space-between;gap:10px;list-style:none;cursor:pointer;padding:11px 14px;color:#a8cce7;font-size:11px;font-weight:700}
+#page-home .workspace-pool-drawer>summary::-webkit-details-marker{display:none}
+#page-home .workspace-pool-drawer[open]>summary{border-bottom:1px solid #33495f}
+#page-home .workspace-pool-drawer[open]>summary>span:last-child{transform:rotate(180deg)}
+#page-home .workspace-pool{position:static;max-height:310px;overflow:auto;padding:15px;border:0;border-radius:0}
+#page-home .workspace-pool .pool-head{align-items:center}
+#page-home .workspace-pool .pool-head h3{font-size:15px}
+#page-home .workspace-pool .pool-head .eyebrow{display:none}
+#page-home .workspace-pool>p{margin:8px 0 12px;font-size:11px}
+#page-home #workspace-device-pool{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#page-home .pool-group{display:block;width:auto;margin:0}
+#page-home .pool-device{padding:8px;min-height:45px;margin-bottom:6px}
+#page-home .pool-device strong{font-size:11px}
+#page-home .workspace-shortcuts{gap:12px;margin-top:20px}
+#page-home .workspace-shortcuts>.card{padding:16px}
+#page-home .workspace-shortcuts h3{font-size:17px}
+#page-home .workspace-shortcuts .card-head{margin-bottom:10px}
+@media(min-width:1450px){#page-home .workspace-rooms{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1180px){#page-home .zone-top{flex-wrap:wrap}#page-home .zone-power{margin-left:44px}#page-home .all-zone .zone-top{flex-wrap:nowrap}#page-home .all-zone .zone-power{margin-left:0}#page-home .zone-controls{grid-template-columns:65px 1fr}#page-home .workspace-zone .zone-controls>.button{grid-column:1/-1;justify-self:start}}
+@media(max-width:800px){#page-home .workspace-rooms{grid-template-columns:1fr}#page-home .zone-top{flex-wrap:nowrap}#page-home .zone-power{margin-left:0}#page-home .workspace-intro h2{font-size:23px}#page-home .zone-controls{grid-template-columns:65px 1fr auto}#page-home .workspace-zone .zone-controls>.button{grid-column:auto}}
+@media(max-width:570px){#page-home .zone-top,#page-home .all-zone .zone-top{flex-wrap:wrap}#page-home .zone-power,#page-home .all-zone .zone-power{margin-left:44px}#page-home .zone-controls{grid-template-columns:65px 1fr}#page-home .workspace-zone .zone-controls>.button{grid-column:1/-1}#page-home #workspace-device-pool{grid-template-columns:1fr}#page-home .workspace-intro{display:block}#page-home .workspace-intro>.button{margin-top:12px}#page-home .workspace-shortcuts{grid-template-columns:1fr}}

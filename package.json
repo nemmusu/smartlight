@@ -1,0 +1,11 @@
+{
+  "name": "smartlight-ui-checks",
+  "private": true,
+  "description": "Browser checks for the Smartlight simulated hardware demo",
+  "scripts": {
+    "test": "node --test test_scope_ui.cjs",
+    "test:ui": "node test_ui_navigation.cjs",
+    "test:i18n": "node test_i18n_ui.cjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}
